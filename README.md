@@ -1,5 +1,7 @@
 # lib-starter
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/motorcyclets/compiler.svg)](https://greenkeeper.io/)
+
 ## Usage
 ```sh
 git clone https://github.com/TylorS/lib-starter LIBRARY_NAME
