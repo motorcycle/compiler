@@ -2,7 +2,7 @@
   "name": "@motorcycle/compiler",
   "description": "Compiles Motorcycle applications from TypeScript to Javascript",
   "repository": "https://github.com/motorcyclets/compiler",
-  "version": "0.0.0",
+  "version": "1.0.0-rc.2",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "typings": "lib/index.d.ts",
@@ -48,7 +48,7 @@
     ]
   },
   "scripts": {
-    "build": "yarn build:commonjs && yarn build:es2015 && chmod + x lib/cli.js",
+    "build": "yarn build:commonjs && yarn build:es2015 && chmod +x lib/cli.js",
     "build:commonjs": "tsc -P .config/tsconfig.commonjs.json",
     "build:es2015": "tsc -P .config/tsconfig.es2015.json",
     "changelog": "conventional-changelog -i CHANGELOG.md -s -r 0 -p angular && git add CHANGELOG.md && git commit -m 'docs(CHANGELOG): amend changelog'",
