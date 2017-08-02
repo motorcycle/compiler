@@ -1,12 +1,10 @@
-# Package Name
+# @motorcycle/compiler
 
 ## Get It
 ```sh
-npm install --save package-name
+npm install --save @motorcycle/compiler
 # or
-yarn add package-name
+yarn add @motorcycle/compiler
 ```
-
-## Basic usage
 
 ## API

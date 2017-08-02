@@ -25,7 +25,20 @@ const { options } = ts.convertCompilerOptionsFromJson(
   cwd
 )
 
-export function compile(filePath: string) {
+/**
+ * Takes the entry file to your Motorcycle run function away using
+ * type information from the TypeScript compiler.
+ * 
+ * @name compile(filePath: string): string
+ * @example
+ * import { compile } from '@motorcycle/compiler'
+ * import * as fs from 'fs'
+ * 
+ * const filePath = './src/bootstrap.ts'
+ * 
+ * fs.writeFileSync(filePath, compile(filePath))
+ */
+export function compile(filePath: string): string {
   const program = ts.createProgram([filePath], options)
   const sourceFiles = program.getSourceFiles().filter(sf => !sf.isDeclarationFile)
 
