@@ -64,6 +64,12 @@
   dependencies:
     "@most/types" "^0.10.0"
 
+"@motorcycle/types@1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@motorcycle/types/-/types-1.2.0.tgz#3b428e29a3dc4a522e11d476fd5881adfa3a5b35"
+  dependencies:
+    "@most/types" "^0.10.0"
+
 "@typed/assertions@1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@typed/assertions/-/assertions-1.1.0.tgz#6428276e542b213356b82da3152ee4dd5d7ec22c"
@@ -1834,8 +1840,8 @@ path-type@^2.0.0:
     pify "^2.0.0"
 
 pbkdf2@^3.0.3:
-  version "3.0.12"
-  resolved "https://registry.yarnpkg.com/pbkdf2/-/pbkdf2-3.0.12.tgz#be36785c5067ea48d806ff923288c5f750b6b8a2"
+  version "3.0.13"
+  resolved "https://registry.yarnpkg.com/pbkdf2/-/pbkdf2-3.0.13.tgz#c37d295531e786b1da3e3eadc840426accb0ae25"
   dependencies:
     create-hash "^1.1.2"
     create-hmac "^1.1.4"
@@ -2136,8 +2142,8 @@ split2@^2.0.0:
     through2 "^2.0.2"
 
 split@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/split/-/split-1.0.0.tgz#c4395ce683abcd254bc28fe1dabb6e5c27dcffae"
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/split/-/split-1.0.1.tgz#605bd9be303aa59fb35f9229fbea0ddec9ea07d9"
   dependencies:
     through "2"
 

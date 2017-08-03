@@ -17,7 +17,7 @@
   "devDependencies": {
     "@motorcycle/run": "3.0.0",
     "@motorcycle/stream": "1.1.0",
-    "@motorcycle/types": "1.1.0",
+    "@motorcycle/types": "1.2.0",
     "@typed/test": "2.4.0",
     "@types/node": "8.0.18",
     "@types/yargs": "^8.0.2",
