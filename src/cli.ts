@@ -11,7 +11,7 @@ const args: any = yargs
   .showHelpOnFail(true).argv
 
 if (args.help) {
-  args.showHelp()
+  yargs.showHelp()
 } else if (args.out) {
   fs.writeFileSync(args.out, compile(args._[0]))
 } else {
