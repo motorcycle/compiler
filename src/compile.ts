@@ -1,7 +1,7 @@
 import * as fs from 'fs'
 import * as ts from 'typescript'
 
-import { removeRunImport, replaceRunCall } from './transformers'
+import { addMissingImports, removeRunImport, replaceRunCall } from './transformers'
 
 import { yellow } from 'typed-colors'
 
@@ -44,7 +44,7 @@ export function compile(filePath: string): string {
 
   const { diagnostics, transformed } = ts.transform(
     sourceFiles,
-    [removeRunImport(program), replaceRunCall(program)],
+    [removeRunImport(program), addMissingImports(program), replaceRunCall(program)],
     options
   )
 

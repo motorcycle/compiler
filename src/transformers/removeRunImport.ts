@@ -5,12 +5,10 @@ import { TransformFactoryFactory } from '../'
 export const removeRunImport: TransformFactoryFactory = removeRunImportTransformerFactory
 
 function removeRunImportTransformerFactory(program: ts.Program) {
-  Function.prototype(program)
+  const checker = program.getTypeChecker()
 
   return function(context: ts.TransformationContext) {
     return function(sourceFile: ts.SourceFile) {
-      if (!sourceFile) return
-
       const visitedNode = ts.visitEachChild(sourceFile, visitor, context)
 
       ts.addEmitHelpers(visitedNode, context.readEmitHelpers())
@@ -18,9 +16,9 @@ function removeRunImportTransformerFactory(program: ts.Program) {
       return visitedNode
 
       function visitor(node: ts.Node): ts.Node {
-        if (ts.isImportDeclaration(node) && isRunImport(node, sourceFile)) {
-          return void 0
-        }
+        checker.getTypeAtLocation(node)
+
+        if (ts.isImportDeclaration(node) && isRunImport(node, sourceFile)) return void 0
 
         return node
       }

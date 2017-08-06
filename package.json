@@ -40,7 +40,7 @@
     "167": "0.36.0",
     "typed-colors": "1.0.0",
     "typescript": "2.4.2",
-    "yargs": "^8.0.2"
+    "yargs": "8.0.2"
   },
   "lint-staged": {
     "*.ts": [
