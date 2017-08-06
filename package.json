@@ -2,7 +2,7 @@
   "name": "@motorcycle/compiler",
   "description": "Compiles Motorcycle applications from TypeScript to Javascript",
   "repository": "https://github.com/motorcyclets/compiler",
-  "version": "1.0.0-rc.5",
+  "version": "1.0.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "typings": "lib/index.d.ts",
