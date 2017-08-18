@@ -18,7 +18,7 @@
     "@motorcycle/dom": "12.1.0",
     "@motorcycle/mostly-dom": "1.1.0",
     "@motorcycle/run": "3.0.0",
-    "@motorcycle/stream": "1.1.0",
+    "@motorcycle/stream": "1.4.0",
     "@motorcycle/types": "1.1.0",
     "@typed/test": "2.4.0",
     "@types/node": "8.0.19",
