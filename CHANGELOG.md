@@ -1,3 +1,13 @@
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/motorcyclets/compiler/compare/v1.0.0...v2.0.0) (2017-08-18)
+
+
+### Features
+
+* **compile:** transpile from TypeScript to JavaScript ([aab79db](https://github.com/motorcyclets/compiler/commit/aab79db))
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/motorcyclets/compiler/compare/v1.0.0-rc.2...v1.0.0) (2017-08-06)
 
