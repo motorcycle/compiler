@@ -72,5 +72,11 @@ export function compile(filePath: string): string {
     return file.fileName === expectedFilePath || file.fileName === expectedFilePath.slice(2)
   })
 
-  return printer.printNode(ts.EmitHint.SourceFile, transformedFile, sourceFile)
+  const sourceCode = printer.printNode(ts.EmitHint.SourceFile, transformedFile, sourceFile)
+
+  const { outputText: transpiledJSCode } = ts.transpileModule(sourceCode, {
+    compilerOptions: options,
+  })
+
+  return transpiledJSCode
 }
