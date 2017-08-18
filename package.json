@@ -30,7 +30,7 @@
     "husky": "0.14.3",
     "lint-staged": "4.0.2",
     "marked": "0.3.6",
-    "mostly-dom": "3.5.0",
+    "mostly-dom": "3.6.0",
     "prettier": "1.5.3",
     "rimraf": "2.6.1",
     "ts-node": "3.3.0",
