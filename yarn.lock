@@ -63,12 +63,12 @@
     "@motorcycle/types" "1.3.0"
     mostly-dom "3.5.0"
 
-"@motorcycle/run@3.3.0":
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/@motorcycle/run/-/run-3.3.0.tgz#010edba2190fea1c251d33079f3004d884b01bc3"
+"@motorcycle/run@3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@motorcycle/run/-/run-3.4.0.tgz#16de404ce4ca96ff8ab133a74e6098ed2110372d"
   dependencies:
-    "@motorcycle/stream" "1.4.0"
-    "@motorcycle/types" "1.3.0"
+    "@motorcycle/stream" "1.5.0"
+    "@motorcycle/types" "1.4.0"
 
 "@motorcycle/stream@1.1.0":
   version "1.1.0"
@@ -90,9 +90,9 @@
     "@most/scheduler" "0.11.0"
     "@motorcycle/types" "1.3.0"
 
-"@motorcycle/stream@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@motorcycle/stream/-/stream-1.4.0.tgz#f58e2e675b3383049d3737d985eb737fed0dffa7"
+"@motorcycle/stream@1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@motorcycle/stream/-/stream-1.5.0.tgz#b1a10498ab02fbd91a4fe83544d3ab26cd1261d2"
   dependencies:
     "167" "0.37.0"
     "@most/core" "0.11.2"
@@ -109,6 +109,12 @@
 "@motorcycle/types@1.3.0":
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/@motorcycle/types/-/types-1.3.0.tgz#3a895f6dd601171ea3310211328b8045badae22b"
+  dependencies:
+    "@most/types" "^0.10.0"
+
+"@motorcycle/types@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@motorcycle/types/-/types-1.4.0.tgz#2f39314aff9cc72cab11956cc6389be22edf02d9"
   dependencies:
     "@most/types" "^0.10.0"
 
@@ -2124,8 +2130,8 @@ slice-ansi@0.0.4:
   resolved "https://registry.yarnpkg.com/slice-ansi/-/slice-ansi-0.0.4.tgz#edbf8903f66f7ce2f8eafd6ceed65e264c831b35"
 
 source-map-support@^0.4.0:
-  version "0.4.15"
-  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.4.15.tgz#03202df65c06d2bd8c7ec2362a193056fef8d3b1"
+  version "0.4.16"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.4.16.tgz#16fecf98212467d017d586a2af68d628b9421cd8"
   dependencies:
     source-map "^0.5.6"
 
@@ -2136,8 +2142,8 @@ source-map@^0.4.4:
     amdefine ">=0.0.4"
 
 source-map@^0.5.6, source-map@~0.5.1, source-map@~0.5.3:
-  version "0.5.6"
-  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.6.tgz#75ce38f52bf0733c5a7f0c118d81334a2bb5f412"
+  version "0.5.7"
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
 
 spdx-correct@~1.0.0:
   version "1.0.2"
