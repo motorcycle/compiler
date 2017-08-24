@@ -28,7 +28,7 @@
     "gaze-run-interrupt": "1.0.1",
     "glob-expand": "0.2.1",
     "husky": "0.14.3",
-    "lint-staged": "4.0.2",
+    "lint-staged": "4.0.4",
     "marked": "0.3.6",
     "mostly-dom": "3.5.0",
     "prettier": "1.5.3",
