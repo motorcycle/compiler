@@ -1,3 +1,8 @@
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/motorcyclets/compiler/compare/v2.0.0...v2.1.0) (2017-08-29)
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/motorcyclets/compiler/compare/v1.0.0...v2.0.0) (2017-08-18)
 
