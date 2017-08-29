@@ -15,7 +15,7 @@
     "mc": "lib/cli.js"
   },
   "devDependencies": {
-    "@motorcycle/dom": "15.0.0",
+    "@motorcycle/dom": "15.1.0",
     "@motorcycle/mostly-dom": "1.1.0",
     "@motorcycle/run": "3.0.0",
     "@motorcycle/stream": "1.1.0",
