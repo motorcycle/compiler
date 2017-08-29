@@ -27,8 +27,8 @@
     "@most/types" "^0.10.0"
 
 "@most/prelude@^1.6.0", "@most/prelude@^1.6.2":
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/@most/prelude/-/prelude-1.6.2.tgz#e022db0a3522ea45a427f739570b99f6a6b49162"
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/@most/prelude/-/prelude-1.6.3.tgz#4eb453acb3251c47b92daa98d1652b704501c027"
 
 "@most/scheduler@0.11.0", "@most/scheduler@^0.11.0":
   version "0.11.0"
@@ -959,8 +959,8 @@ fs.realpath@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
 
 function-bind@^1.0.2:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.0.tgz#16176714c801798e4e8f2cf7f7529467bb4a5771"
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
 
 gaze-run-interrupt@1.0.1:
   version "1.0.1"
@@ -1668,9 +1668,9 @@ mostly-dom@3.5.0:
   dependencies:
     "@most/prelude" "^1.6.0"
 
-mostly-dom@3.6.1:
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/mostly-dom/-/mostly-dom-3.6.1.tgz#385094850e55d72397e07820fd7aaecf73eef110"
+mostly-dom@3.6.3:
+  version "3.6.3"
+  resolved "https://registry.yarnpkg.com/mostly-dom/-/mostly-dom-3.6.3.tgz#ea6c954a91635157c870dea5669939517804cf16"
   dependencies:
     "@most/prelude" "^1.6.0"
 
