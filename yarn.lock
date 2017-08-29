@@ -37,6 +37,10 @@
     "@most/prelude" "^1.6.2"
     "@most/types" "^0.10.0"
 
+"@most/types@0.11.0":
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/@most/types/-/types-0.11.0.tgz#39ca6c156163a65ba754ca8c7ebdb309d21197c6"
+
 "@most/types@^0.10.0":
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/@most/types/-/types-0.10.0.tgz#5a60b581915349b210a13fed1563e9d06cba287f"
@@ -98,11 +102,11 @@
   dependencies:
     "@most/types" "^0.10.0"
 
-"@motorcycle/types@1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@motorcycle/types/-/types-1.5.0.tgz#c195204212f8ee59f25199fab9c7e17f3956dfdb"
+"@motorcycle/types@1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@motorcycle/types/-/types-1.6.0.tgz#d8f43631cc67529a65411a42f156c087a8d95f95"
   dependencies:
-    "@most/types" "^0.10.0"
+    "@most/types" "0.11.0"
 
 "@typed/assertions@1.1.0":
   version "1.1.0"
@@ -965,8 +969,8 @@ fs.realpath@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
 
 function-bind@^1.0.2:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.0.tgz#16176714c801798e4e8f2cf7f7529467bb4a5771"
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
 
 gaze-run-interrupt@1.0.1:
   version "1.0.1"
