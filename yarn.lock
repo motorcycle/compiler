@@ -14,93 +14,77 @@
   version "0.30.0"
   resolved "https://registry.yarnpkg.com/167/-/167-0.30.0.tgz#8e571e64851bebe8dced5723b48a07ab297b5b9b"
 
-"@most/core@0.11.2":
-  version "0.11.2"
-  resolved "https://registry.yarnpkg.com/@most/core/-/core-0.11.2.tgz#6e3615fb4fc5a6a32cd35acb10a513a0e56df150"
+"@most/core@0.12.1":
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/@most/core/-/core-0.12.1.tgz#1895b9b02566b2fe2213997a397af03802d3f78c"
   dependencies:
-    "@most/disposable" "^0.11.0"
-    "@most/prelude" "^1.6.2"
-    "@most/scheduler" "^0.11.0"
-    "@most/types" "^0.10.0"
+    "@most/disposable" "^0.12.0"
+    "@most/prelude" "^1.6.3"
+    "@most/scheduler" "^0.12.0"
+    "@most/types" "^0.11.0"
 
-"@most/disposable@0.11.0", "@most/disposable@^0.11.0":
+"@most/disposable@0.12.0", "@most/disposable@^0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@most/disposable/-/disposable-0.12.0.tgz#aaf3fe59eef9b951b43265abbbaac25548b64ccf"
+  dependencies:
+    "@most/prelude" "^1.6.3"
+    "@most/types" "^0.11.0"
+
+"@most/prelude@^1.6.0", "@most/prelude@^1.6.3":
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/@most/prelude/-/prelude-1.6.3.tgz#4eb453acb3251c47b92daa98d1652b704501c027"
+
+"@most/scheduler@0.12.0", "@most/scheduler@^0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@most/scheduler/-/scheduler-0.12.0.tgz#149b1e40194379a96dc4f10f321010c463feeac8"
+  dependencies:
+    "@most/prelude" "^1.6.3"
+    "@most/types" "^0.11.0"
+
+"@most/types@0.11.0", "@most/types@^0.11.0":
   version "0.11.0"
-  resolved "https://registry.yarnpkg.com/@most/disposable/-/disposable-0.11.0.tgz#ad9d0d160d932a6881785f363083a44d8400cef5"
-  dependencies:
-    "@most/prelude" "^1.6.2"
-    "@most/types" "^0.10.0"
+  resolved "https://registry.yarnpkg.com/@most/types/-/types-0.11.0.tgz#39ca6c156163a65ba754ca8c7ebdb309d21197c6"
 
-"@most/prelude@^1.6.0", "@most/prelude@^1.6.2":
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/@most/prelude/-/prelude-1.6.2.tgz#e022db0a3522ea45a427f739570b99f6a6b49162"
-
-"@most/scheduler@0.11.0", "@most/scheduler@^0.11.0":
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/@most/scheduler/-/scheduler-0.11.0.tgz#0f67a0f097c9358e4308931e206c03a30f87faf4"
-  dependencies:
-    "@most/prelude" "^1.6.2"
-    "@most/types" "^0.10.0"
-
-"@most/types@^0.10.0":
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/@most/types/-/types-0.10.0.tgz#5a60b581915349b210a13fed1563e9d06cba287f"
-
-"@motorcycle/dom@13.1.0":
-  version "13.1.0"
-  resolved "https://registry.yarnpkg.com/@motorcycle/dom/-/dom-13.1.0.tgz#cbda821e359a9351bd736c222bdab091d6ccce66"
+"@motorcycle/dom@15.1.0":
+  version "15.1.0"
+  resolved "https://registry.yarnpkg.com/@motorcycle/dom/-/dom-15.1.0.tgz#983f2081caa195b611ede3c9ab64df3bc3f187e4"
   dependencies:
     "167" "0.37.0"
-    "@motorcycle/stream" "1.5.0"
-    "@motorcycle/types" "1.4.0"
+    "@motorcycle/stream" "1.7.0"
+    "@motorcycle/types" "1.6.0"
 
-"@motorcycle/mostly-dom@3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@motorcycle/mostly-dom/-/mostly-dom-3.0.0.tgz#3e92bbb4f5e08c391d8d8933f69bd283f8052e2e"
+"@motorcycle/mostly-dom@3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@motorcycle/mostly-dom/-/mostly-dom-3.2.0.tgz#b950556da946a53bc68793d1189fd94b92639e88"
   dependencies:
     "167" "0.37.0"
-    "@motorcycle/dom" "13.1.0"
-    "@motorcycle/stream" "1.5.0"
-    "@motorcycle/types" "1.4.0"
-    mostly-dom "4.0.0"
+    "@motorcycle/dom" "15.1.0"
+    "@motorcycle/stream" "1.7.0"
+    "@motorcycle/types" "1.6.0"
+    mostly-dom "4.2.0"
 
-"@motorcycle/run@3.4.0":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@motorcycle/run/-/run-3.4.0.tgz#16de404ce4ca96ff8ab133a74e6098ed2110372d"
+"@motorcycle/run@3.6.0":
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/@motorcycle/run/-/run-3.6.0.tgz#9716da9361ad06b74543a3695009148356770619"
   dependencies:
-    "@motorcycle/stream" "1.5.0"
-    "@motorcycle/types" "1.4.0"
+    "@motorcycle/stream" "1.7.0"
+    "@motorcycle/types" "1.6.0"
 
-"@motorcycle/stream@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@motorcycle/stream/-/stream-1.4.0.tgz#f58e2e675b3383049d3737d985eb737fed0dffa7"
-  dependencies:
-    "167" "0.37.0"
-    "@most/core" "0.11.2"
-    "@most/disposable" "0.11.0"
-    "@most/scheduler" "0.11.0"
-    "@motorcycle/types" "1.3.0"
-
-"@motorcycle/stream@1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@motorcycle/stream/-/stream-1.5.0.tgz#b1a10498ab02fbd91a4fe83544d3ab26cd1261d2"
+"@motorcycle/stream@1.7.0":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@motorcycle/stream/-/stream-1.7.0.tgz#0dddf150e7bb89d6542de1391c6abf4568225f93"
   dependencies:
     "167" "0.37.0"
-    "@most/core" "0.11.2"
-    "@most/disposable" "0.11.0"
-    "@most/scheduler" "0.11.0"
-    "@motorcycle/types" "1.3.0"
+    "@most/core" "0.12.1"
+    "@most/disposable" "0.12.0"
+    "@most/scheduler" "0.12.0"
+    "@motorcycle/types" "1.6.0"
 
-"@motorcycle/types@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@motorcycle/types/-/types-1.3.0.tgz#3a895f6dd601171ea3310211328b8045badae22b"
+"@motorcycle/types@1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@motorcycle/types/-/types-1.6.0.tgz#d8f43631cc67529a65411a42f156c087a8d95f95"
   dependencies:
-    "@most/types" "^0.10.0"
-
-"@motorcycle/types@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@motorcycle/types/-/types-1.4.0.tgz#2f39314aff9cc72cab11956cc6389be22edf02d9"
-  dependencies:
-    "@most/types" "^0.10.0"
+    "@most/types" "0.11.0"
 
 "@typed/assertions@1.1.0":
   version "1.1.0"
@@ -127,9 +111,9 @@
     typed-figures "1.0.0"
     yargs "8.0.2"
 
-"@types/node@8.0.24":
-  version "8.0.24"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.24.tgz#06c580084d9add1fb40c1510ef0b448961246fb1"
+"@types/node@8.0.26":
+  version "8.0.26"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.26.tgz#4d58be925306fd22b1141085535a0268b8beb189"
 
 "@types/yargs@8.0.2":
   version "8.0.2"
@@ -143,10 +127,10 @@ JSONStream@^1.0.3, JSONStream@^1.0.4:
     through ">=2.2.7 <3"
 
 accepts@~1.3.3:
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/accepts/-/accepts-1.3.3.tgz#c3ca7434938648c3e0d9c1e328dd68b622c284ca"
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/accepts/-/accepts-1.3.4.tgz#86246758c7dd6d21a6474ff084a4740ec05eb21f"
   dependencies:
-    mime-types "~2.1.11"
+    mime-types "~2.1.16"
     negotiator "0.6.1"
 
 acorn@^4.0.3:
@@ -782,7 +766,7 @@ create-ecdh@^4.0.0:
     bn.js "^4.1.0"
     elliptic "^6.0.0"
 
-create-hash@^1.1.0, create-hash@^1.1.1, create-hash@^1.1.2:
+create-hash@^1.1.0, create-hash@^1.1.2:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/create-hash/-/create-hash-1.1.3.tgz#606042ac8b9262750f483caddab0f5819172d8fd"
   dependencies:
@@ -994,10 +978,11 @@ events@~1.1.0:
   resolved "https://registry.yarnpkg.com/events/-/events-1.1.1.tgz#9ebdb7635ad099c70dcc4c2a1f5004288e8bd924"
 
 evp_bytestokey@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/evp_bytestokey/-/evp_bytestokey-1.0.0.tgz#497b66ad9fef65cd7c08a6180824ba1476b66e53"
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/evp_bytestokey/-/evp_bytestokey-1.0.2.tgz#f66bb88ecd57f71a766821e20283ea38c68bf80a"
   dependencies:
-    create-hash "^1.1.1"
+    md5.js "^1.3.4"
+    safe-buffer "^5.1.1"
 
 execa@^0.7.0:
   version "0.7.0"
@@ -1105,8 +1090,8 @@ fs.realpath@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
 
 function-bind@^1.0.2:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.0.tgz#16176714c801798e4e8f2cf7f7529467bb4a5771"
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
 
 gaze-run-interrupt@1.0.1:
   version "1.0.1"
@@ -1251,6 +1236,13 @@ hash-base@^2.0.0:
   resolved "https://registry.yarnpkg.com/hash-base/-/hash-base-2.0.2.tgz#66ea1d856db4e8a5470cadf6fce23ae5244ef2e1"
   dependencies:
     inherits "^2.0.1"
+
+hash-base@^3.0.0:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/hash-base/-/hash-base-3.0.4.tgz#5fc8686847ecd73499403319a6b0a3f3f6ae4918"
+  dependencies:
+    inherits "^2.0.1"
+    safe-buffer "^5.0.1"
 
 hash.js@^1.0.0, hash.js@^1.0.3:
   version "1.1.3"
@@ -1524,9 +1516,9 @@ linkify-it@^2.0.0:
   dependencies:
     uc.micro "^1.0.1"
 
-lint-staged@4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-4.0.3.tgz#1ce55591bc2c83a781a90b69a0a0c8aa0fc6370b"
+lint-staged@4.0.4:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-4.0.4.tgz#9ca6968b30dfbfe81365b7a763cd4f4992896553"
   dependencies:
     app-root-path "^2.0.0"
     cosmiconfig "^1.1.0"
@@ -1713,6 +1705,13 @@ marked@0.3.6:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.6.tgz#b2c6c618fccece4ef86c4fc6cb8a7cbf5aeda8d7"
 
+md5.js@^1.3.4:
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/md5.js/-/md5.js-1.3.4.tgz#e9bdbde94a20a5ac18b04340fc5764d5b09d901d"
+  dependencies:
+    hash-base "^3.0.0"
+    inherits "^2.0.1"
+
 mdurl@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/mdurl/-/mdurl-1.0.1.tgz#fe85b2ec75a59037f2adfec100fd6c601761152e"
@@ -1761,7 +1760,7 @@ mime-db@~1.29.0:
   version "1.29.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.29.0.tgz#48d26d235589651704ac5916ca06001914266878"
 
-mime-types@~2.1.11, mime-types@~2.1.15:
+mime-types@~2.1.15, mime-types@~2.1.16:
   version "2.1.16"
   resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.16.tgz#2b858a52e5ecd516db897ac2be87487830698e23"
   dependencies:
@@ -1837,9 +1836,9 @@ module-deps@^4.0.8:
     through2 "^2.0.0"
     xtend "^4.0.0"
 
-mostly-dom@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/mostly-dom/-/mostly-dom-4.0.0.tgz#1fff07323f03b01def2cbe6092cc94d99729049d"
+mostly-dom@4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/mostly-dom/-/mostly-dom-4.2.0.tgz#1a0bc40dd4b9136285799d4aad1d8102e53ca0d2"
   dependencies:
     "@most/prelude" "^1.6.0"
 
@@ -2083,9 +2082,9 @@ plist@^2.0.1:
     xmlbuilder "8.2.2"
     xmldom "0.1.x"
 
-prettier@1.5.3:
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.5.3.tgz#59dadc683345ec6b88f88b94ed4ae7e1da394bfe"
+prettier@1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.6.1.tgz#850f411a3116226193e32ea5acfc21c0f9a76d7d"
 
 process-nextick-args@~1.0.6:
   version "1.0.7"
@@ -2288,7 +2287,7 @@ rxjs@^5.0.0-beta.11:
   dependencies:
     symbol-observable "^1.0.1"
 
-safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
+safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.1, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
 
