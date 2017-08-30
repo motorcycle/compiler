@@ -51,7 +51,7 @@ function replaceRunCallTransformerFactory(program: ts.Program) {
   }
 }
 
-function replicateSinks(keys: Array<string>, sinks: ts.Identifier, proxies: ts.Identifier) {
+function replicateSinks(keys: ReadonlyArray<string>, sinks: ts.Identifier, proxies: ts.Identifier) {
   return keys.map(key =>
     ts.createCall(
       ts.createIdentifier(sinks.text + `.${key}.run`),

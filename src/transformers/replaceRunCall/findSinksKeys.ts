@@ -6,9 +6,9 @@ export function findSinksKeys(node: ts.ExpressionStatement, checker: ts.TypeChec
 
   if (typeArguments) {
     const [, SinksTypeNode] = typeArguments
-    const { symbol } = checker.getTypeFromTypeNode(SinksTypeNode)
+    const type = checker.getTypeFromTypeNode(SinksTypeNode)
 
-    return arrayFromIterator(symbol.members.keys())
+    return findSinkNames(type)
   } else {
     const [UI] = expression.arguments as ts.NodeArray<ts.Identifier>
     const UISymbol = checker.getSymbolAtLocation(UI)
@@ -16,13 +16,21 @@ export function findSinksKeys(node: ts.ExpressionStatement, checker: ts.TypeChec
 
     if (isFunctionLike(valueDeclaration)) {
       const signature = checker.getSignatureFromDeclaration(valueDeclaration)
-      const { symbol } = checker.getReturnTypeOfSignature(signature)
+      const type = checker.getReturnTypeOfSignature(signature)
 
-      return arrayFromIterator(symbol.members.keys())
+      return findSinkNames(type)
     }
 
     throw new Error(`Unable to find Sinks type's keys`)
   }
+}
+
+function findSinkNames(type: ts.Type): ReadonlyArray<string> {
+  const symbol = type.getSymbol()
+
+  if (symbol && symbol.members) return arrayFromIterator(symbol.members.keys())
+
+  return type.getProperties().map(property => property.getName())
 }
 
 function isFunctionLike(dec: ts.Declaration): dec is ts.FunctionDeclaration {

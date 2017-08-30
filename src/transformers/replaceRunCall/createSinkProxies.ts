@@ -4,7 +4,7 @@ import { createVariableStatement } from './createVariableStatement'
 
 export function createSinkProxies(
   identifier: ts.Identifier,
-  sinksKeys: Array<string>
+  sinksKeys: ReadonlyArray<string>
 ): ts.VariableStatement {
   return createVariableStatement(
     ts.createVariableDeclaration(
