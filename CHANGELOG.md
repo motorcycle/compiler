@@ -1,3 +1,13 @@
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/motorcyclets/compiler/compare/v2.1.0...v2.2.0) (2017-08-30)
+
+
+### Bug Fixes
+
+* **replaceRunCall:** add a fallback case to finding sink keys ([da8cb73](https://github.com/motorcyclets/compiler/commit/da8cb73))
+
+
+
 <a name="2.1.0"></a>
 # [2.1.0](https://github.com/motorcyclets/compiler/compare/v2.0.0...v2.1.0) (2017-08-29)
 
