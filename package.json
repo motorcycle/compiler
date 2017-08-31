@@ -36,7 +36,7 @@
     "validate-commit-message": "3.0.1"
   },
   "dependencies": {
-    "167": "0.37.0",
+    "167": "0.38.0",
     "typed-colors": "1.0.0",
     "typescript": "2.4.2",
     "yargs": "8.0.2"
