@@ -27,8 +27,10 @@ const { options } = ts.convertCompilerOptionsFromJson(
 )
 
 /**
- * Takes the entry file to your Motorcycle run function away using
- * type information from the TypeScript compiler.
+ * Takes the entry file to your Motorcycle application and compiles the
+ * dynamic `run` function call into an imperative equivalent to improve 
+ * performance and ensure certain classes of bugs do not occur using type 
+ * information from the TypeScript compiler.
  * 
  * @name compile(filePath: string): string
  * @example
@@ -37,7 +39,10 @@ const { options } = ts.convertCompilerOptionsFromJson(
  * 
  * const filePath = './src/bootstrap.ts'
  * 
- * fs.writeFileSync(filePath, compile(filePath))
+ * const { code, sourceMap } = compile(filePath)
+ * 
+ * fs.writeFileSync(filePath, code)
+ * fs.wrtieFileSync(`${filePath}.map`, sourceMap)
  */
 export function compile(filePath: string): { code: string; sourceMap: string } {
   const program = ts.createProgram([filePath], options)

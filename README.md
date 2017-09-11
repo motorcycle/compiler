@@ -22,7 +22,10 @@ import * as fs from 'fs'
 
 const filePath = './src/bootstrap.ts'
 
-fs.writeFileSync(filePath, compile(filePath))
+const { code, sourceMap } = compile(filePath)
+
+fs.writeFileSync(filePath, code)
+fs.wrtieFileSync(`${filePath}.map`, sourceMap)
 ```
 
 </details>
