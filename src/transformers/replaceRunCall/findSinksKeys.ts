@@ -37,6 +37,6 @@ function isFunctionLike(dec: ts.Declaration): dec is ts.FunctionDeclaration {
   return ts.isFunctionDeclaration(dec) || ts.isFunctionExpression(dec) || ts.isArrowFunction(dec)
 }
 
-function arrayFromIterator<A>(iterator: Iterator<A>): Array<A> {
-  return Array.from<A>({ [Symbol.iterator]: () => iterator })
+function arrayFromIterator(iterator: Iterator<ts.__String>): Array<string> {
+  return Array.from({ [Symbol.iterator]: () => iterator }).map(String)
 }

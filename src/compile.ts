@@ -21,6 +21,7 @@ const { options } = ts.convertCompilerOptionsFromJson(
     target: 'es5',
     noEmit: false,
     noEmitOnError: true,
+    sourceMap: true,
   },
   cwd
 )
@@ -38,7 +39,7 @@ const { options } = ts.convertCompilerOptionsFromJson(
  * 
  * fs.writeFileSync(filePath, compile(filePath))
  */
-export function compile(filePath: string): string {
+export function compile(filePath: string): { code: string; sourceMap: string } {
   const program = ts.createProgram([filePath], options)
   const sourceFiles = program.getSourceFiles().filter(sf => !sf.isDeclarationFile)
 
@@ -48,19 +49,7 @@ export function compile(filePath: string): string {
     options
   )
 
-  if (diagnostics && diagnostics.length) {
-    console.log(
-      yellow(`
-      ======================= Diagnostics for ${filePath} =======================
-      `)
-    )
-    for (const diag of diagnostics) {
-      if (diag.file && diag.start) {
-        const pos = diag.file.getLineAndCharacterOfPosition(diag.start)
-        console.log(`(${pos.line}, ${pos.character}) ${diag.messageText}`)
-      }
-    }
-  }
+  logDiagnostics(filePath, diagnostics)
 
   const printer = ts.createPrinter()
 
@@ -74,9 +63,31 @@ export function compile(filePath: string): string {
 
   const sourceCode = printer.printNode(ts.EmitHint.SourceFile, transformedFile, sourceFile)
 
-  const { outputText: transpiledJSCode } = ts.transpileModule(sourceCode, {
+  const {
+    outputText: code,
+    sourceMapText: sourceMap,
+    diagnostics: jsDiagnostics,
+  } = ts.transpileModule(sourceCode, {
     compilerOptions: options,
   })
 
-  return transpiledJSCode
+  logDiagnostics(filePath, jsDiagnostics)
+
+  return { code, sourceMap }
+}
+
+function logDiagnostics(filePath: string, diagnostics: Array<ts.Diagnostic>) {
+  if (diagnostics && diagnostics.length) {
+    console.log(
+      yellow(`
+      ======================= Diagnostics for ${filePath} =======================
+      `)
+    )
+    for (const { file, start, messageText } of diagnostics) {
+      if (file && start) {
+        const { line, character } = file.getLineAndCharacterOfPosition(start)
+        console.log(`(${line}, ${character}) ${messageText}`)
+      }
+    }
+  }
 }
