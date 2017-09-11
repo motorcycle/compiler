@@ -1,3 +1,13 @@
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/motorcyclets/compiler/compare/v2.2.0...v3.0.0) (2017-09-11)
+
+
+### Features
+
+* remove cli and return sourceMap ([3e33877](https://github.com/motorcyclets/compiler/commit/3e33877))
+
+
+
 <a name="2.2.0"></a>
 # [2.2.0](https://github.com/motorcyclets/compiler/compare/v2.1.0...v2.2.0) (2017-08-30)
 
