@@ -97,9 +97,9 @@
     "167" "0.36.0"
     assertion-error-diff "^1.0.0"
 
-"@typed/test@3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@typed/test/-/test-3.0.0.tgz#6901ef0e2b34bddd4368edf3a3f0db2e4fc48409"
+"@typed/test@3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@typed/test/-/test-3.1.0.tgz#da496903e1889f23415bea4508cc2f86fd89d343"
   dependencies:
     "167" "0.43.0"
     "@typed/assertions" "1.1.0"
