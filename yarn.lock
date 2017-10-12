@@ -90,6 +90,12 @@
   dependencies:
     "@most/types" "0.11.1"
 
+"@motorcycle/types@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@motorcycle/types/-/types-3.0.0.tgz#3f321bf22510ac64d04ce491316a9af853cbe0f4"
+  dependencies:
+    "@most/types" "0.11.1"
+
 "@typed/assertions@1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@typed/assertions/-/assertions-1.1.0.tgz#6428276e542b213356b82da3152ee4dd5d7ec22c"

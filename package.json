@@ -15,7 +15,7 @@
     "@motorcycle/mostly-dom": "4.0.0",
     "@motorcycle/run": "4.0.0",
     "@motorcycle/stream": "2.0.0",
-    "@motorcycle/types": "2.0.0",
+    "@motorcycle/types": "3.0.0",
     "@typed/test": "3.6.0",
     "@types/node": "8.0.28",
     "@types/yargs": "8.0.2",
