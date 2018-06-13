@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "typed-colors": "1.0.0",
-    "typescript": "2.5.2"
+    "typescript": "2.9.2"
   },
   "lint-staged": {
     "*.ts": [
