@@ -28,7 +28,7 @@
     "marked": "0.3.6",
     "prettier": "1.6.1",
     "rimraf": "2.6.2",
-    "ts-node": "3.3.0",
+    "ts-node": "6.2.0",
     "validate-commit-message": "3.0.1"
   },
   "dependencies": {
